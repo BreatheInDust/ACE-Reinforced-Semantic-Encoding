@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACE RSE</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      backdrop-filter: blur(12px);
+      background: #f7f7f7;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #ededed;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #ff6b00, #ffcc70);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/0yK62j2D/ACE-RSE-removebg-preview.png" alt="ACE RSE Logo" />
+    <p>Innovation across gaming, cloud, AI, and design — powered by ACE Productions.</p>
+  </header>
+
+  <section class="button-grid">
+    <div class="card">
+      <h2>Login / Signup</h2>
+      <p>Create your ACE account to access labs, portals, and future projects.</p>
+      <a href="auth.html" class="btn">Enter</a>
+    </div>
+
+    <div class="card">
+      <h2>ACE Labs</h2>
+      <p>Discover interactive experiments, prototypes, and creative tech showcases.</p>
+      <a href="labs.html" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+      <h2>PlayerCloud Portal</h2>
+      <p>Access crossplay sessions, track games, and connect with your cloud universe.</p>
+      <a href="playercloud.html" class="btn">Launch</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ACE Productions. All rights reserved.
+  </footer>
+</body>
+</html>

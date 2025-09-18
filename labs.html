@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACE Labs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 2rem;
+      color: #111;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+    .card {
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/0yK62j2D/ACE-RSE-removebg-preview.png" alt="ACE Logo">
+    <h1>ACE Labs</h1>
+    <p>Explore experimental projects, creative prototypes, and cutting-edge concepts by ACE Productions.</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>Experiment One</h2>
+      <p>An interactive showcase of early AI design systems.</p>
+    </div>
+    <div class="card">
+      <h2>Prototype Two</h2>
+      <p>A new approach to crossplay mechanics using PlayerCloud tech.</p>
+    </div>
+    <div class="card">
+      <h2>Concept Three</h2>
+      <p>Exploring generative art within immersive 3D spaces.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ACE Productions. All rights reserved.
+  </footer>
+</body>
+</html>
